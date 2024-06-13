@@ -8,8 +8,10 @@ const information = {
             contacto: 'Contacto',
         },
         home: {
-            title: 'Mi Portafolio',
-            description: 'Bienvenido a mi portafolio animado. Aquí puedes conocer más sobre mí y mis proyectos.',
+            title: 'Hello-da, Soy Yareth Leal',
+            description: 'Soy Ingeniero de Software y en este portafolio podras conocer más sobre mí y mis proyectos.',
+            button: 'Contactame',
+            email: 'yarethleal65@gmail.com',
         },
         aboutMe: {
             title: 'Sobre Mí',
