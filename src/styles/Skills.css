@@ -1,0 +1,32 @@
+.skills-bar {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.skills-content {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+}
+
+.skills-content:hover {
+  animation-play-state: paused; /* Pausa la animación al pasar el cursor */
+}
+
+.skill-badge {
+  transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.2); /* Aumenta el tamaño del badge al pasar el cursor */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
