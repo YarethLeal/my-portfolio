@@ -18,7 +18,7 @@ const Skills = ({ language }) => {
     return (
         <div id='skills'>
             <div className='container col-xxl-8 px-4 py-5'>
-                <h2>{skillsContent.title}</h2>
+                <h2><i class="bi bi-award"></i> {skillsContent.title}</h2>
                 <p>{skillsContent.content}</p>
                 <div className="container-fluid">
                     <div className="skills-bar">
