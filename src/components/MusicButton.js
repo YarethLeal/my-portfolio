@@ -5,6 +5,7 @@ function MusicButton() {
 
     const toggleMusic = () => {
         const audioElement = document.getElementById('background-music');
+        audioElement.volume = 0.08;
         if (isPlaying) {
             audioElement.pause();
         } else {
