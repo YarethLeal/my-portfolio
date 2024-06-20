@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import MusicButton from './components/MusicButton';
+import music from './music/starlight-harmonies.mp3';
 
 // Define your supported languages
 const supportedLanguages = ['en', 'es'];
@@ -27,6 +29,9 @@ function App() {
   };
   return (
     <>
+      <audio id="background-music" loop>
+        <source src={music} type="audio/mpeg" />
+      </audio>
       <header>
         <Navbar onLanguageChange={toggleLanguage} language={currentLanguage} />
       </header>
@@ -35,8 +40,13 @@ function App() {
         <Skills language={currentLanguage} />
         <AboutMe language={currentLanguage} />
         <Projects language={currentLanguage} />
+        <MusicButton />
       </main>
-      <footer><a href="https://www.freepik.es/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-astronauta-funcionamiento-portatil-icono-tecnologia-ciencia_10411620.htm#fromView=search&page=3&position=27&uuid=2fe7bf5a-66a1-403f-ab8c-99ce11a6f432">Imagen de catalyststuff en Freepik</a></footer>
+      <footer>
+        <a href="https://www.freepik.es/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-astronauta-funcionamiento-portatil-icono-tecnologia-ciencia_10411620.htm#fromView=search&page=3&position=27&uuid=2fe7bf5a-66a1-403f-ab8c-99ce11a6f432">Imagen de catalyststuff en Freepik</a>
+        <br />
+        Music by <a href="https://pixabay.com/es/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=185900">UNIVERSFIELD</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=185900">Pixabay</a>
+      </footer>
     </>
   );
 }

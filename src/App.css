@@ -50,3 +50,10 @@
 .img-scale:hover {
   transform: scale(1.8);
 }
+
+#audio-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: purple;
+}
