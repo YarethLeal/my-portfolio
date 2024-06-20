@@ -11,7 +11,7 @@ const Skills = ({ language }) => {
 
     const skillBadges = skillsContent.badges.map((skill, index) => (
         <div key={index} className="skill-badge">
-            <img src={skill.Src} alt={skill.Alt} />
+            <img src={skill.Src} alt={skill.Alt} title={skill.Alt} />
         </div>
     ))
 

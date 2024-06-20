@@ -15,7 +15,7 @@ const information = {
         },
         aboutMe: {
             title: 'Sobre Mí',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+            content: 'Me llamo Yareth Leal Arguedas, soy Ingeniero de Software, egresado de la Universidad de Costa Rica. Me apasiona la programación y el desarrollo de software. Tengo experiencia en el desarrollo de aplicaciones web y móviles, así como en el desarrollo de aplicaciones de escritorio. Me gusta aprender nuevas tecnologías y aplicarlas en mis proyectos. Soy una persona proactiva, responsable y comprometida con mi trabajo. Me gusta trabajar en equipo y aprender de los demás. Mis hobbies son la lectura, el cine y la música.',
         },
         skills: {
             title: 'Skills',
