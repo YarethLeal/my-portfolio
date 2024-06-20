@@ -9,8 +9,24 @@ function Home({ language }) {
     useEffect(() => {
         setHome(information[language].home);
     }, [language]);
+
+    // Genera 100 estrellas aleatoriamente
+    const stars = Array.from({ length: 100 }, () => ({
+        left: Math.random() * window.innerWidth,
+        animationDuration: 2 + Math.random() * 5
+    }));
     return (
         <div id='home'>
+            {stars.map((star, i) => (
+                <div
+                    key={i}
+                    className="star"
+                    style={{
+                        left: star.left,
+                        animationDuration: `${star.animationDuration}s`
+                    }}
+                />
+            ))}
             <div class="container col-xxl-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">

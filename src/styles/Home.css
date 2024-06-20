@@ -61,3 +61,32 @@
         transform: translateX(0) rotate(0);
     }
 }
+
+#home {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    height: 100vh;
+    /* Asegúrate de que el contenedor abarque todo el espacio vertical */
+    width: 100%;
+    /* Asegúrate de que el contenedor abarque todo el espacio horizontal */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    animation: fall linear infinite;
+}
+
+
+@keyframes fall {
+    from {
+        transform: translateY(-100vh);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}
