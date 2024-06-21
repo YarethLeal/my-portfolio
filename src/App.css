@@ -57,3 +57,20 @@
   bottom: 20px;
   background-color: purple;
 }
+
+.planet-spin {
+  animation: spinPlanet 10s infinite linear;
+}
+
+@keyframes spinPlanet {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

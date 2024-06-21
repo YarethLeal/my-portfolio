@@ -36,7 +36,7 @@ function Home({ language }) {
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" id='home-title'>{homeContent.title}</h1>
                         <p class="lead">{homeContent.description}</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button id="home-button" type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                            <button id="home-button" type="button" class="btn btn-primary btn-lg px-4 me-md-2" onClick={() => window.location.href = 'mailto:{yarethleal65@gmail.com}'}>
                                 <i class="bi bi-envelope-at-fill"></i>
                                 {" "}
                                 {homeContent.button}

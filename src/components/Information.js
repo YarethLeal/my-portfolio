@@ -105,7 +105,7 @@ const information = {
                 },
             ],
         },
-        contacto: {
+        contact: {
             title: 'Contacto',
             content: 'Puedes contactarme en...',
         },
@@ -215,7 +215,7 @@ const information = {
                 },
             ],
         },
-        contacto: {
+        contact: {
             title: 'Contact',
             content: 'Puedes contactarme en...',
         },
